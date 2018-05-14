@@ -1,0 +1,49 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightcoral;
+}
+
+.team-name, .btn-create {
+  display: block;
+}
+
+.team-name {
+  border: 0px;
+  border-bottom: 2px solid #710000;;
+  background-color: transparent;
+  color: #710000;;
+  padding: 10px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.christmas {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 35px;
+  color: #710000;
+  position: relative;
+  top: -20%;
+}
+
+.team-name::placeholder {
+  color: #a84242;
+}
+
+.team-name:focus {
+  outline: none;
+}
+
+.btn-create {
+  margin-top: 20px;
+  background-color: black;
+  border: 0px;
+  padding: 8px 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

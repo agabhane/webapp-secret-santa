@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="input-wrapper" [style.display]="joined ? 'none' : 'flex'">
+    <div class="subtitle christmas">Merry Christmas</div>
+    <input type="text" class="name" placeholder="Enter your name" [(ngModel)]="name">
+    <button class="btn-join" (click)="join()">Join</button>
+  </div>
+  <div class="admin-joined-wrapper" [style.display]="(joined && isAdmin && !giftFor) ? 'flex' : 'none'">
+    <div class="subtitle">You are in !</div>
+    <div class="text">Share this link with your team members to join</div>
+    <button class="btn-generate" (click)="generate()">Generate</button>
+    <ul class="member-list">
+      <li *ngFor="let m of members">{{m}}</li>
+    </ul>
+  </div>
+  <div class="other-joined-wrapper" [style.display]="(joined && !isAdmin && !giftFor) ? 'flex' : 'none'">
+    <div class="subtitle">You are in !</div>
+    <div class="text">Please wait, other members are joining</div>
+    <div class="loader">
+      <img src="assets/images/loader.svg" alt="Loading...">
+    </div>
+  </div>
+  <div class="gift-wrapper" [style.display]="giftFor ? 'flex' : 'none'">
+    <div class="subtitle christmas">Merry Christmas</div>
+    <div class="text">You are the santa of</div>
+    <div class="gift-for">{{giftFor}}</div>
+  </div>
+
+</div>

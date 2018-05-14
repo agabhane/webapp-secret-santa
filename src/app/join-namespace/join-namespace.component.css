@@ -1,0 +1,115 @@
+.wrapper {
+  height: 100vh;
+  background-color: lightcoral;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-joined-wrapper, .other-joined-wrapper, .gift-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.other-joined-wrapper {
+  justify-content: center;
+}
+
+.loader {
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.christmas {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 35px;
+  color: #710000;
+}
+
+.input-wrapper .christmas {
+  position: relative;
+  top: -20%;
+}
+
+.gift-for {
+  font-size: 20px;
+  color: #710000;
+  font-weight: bold;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.name, .btn-join {
+  display: block;
+}
+
+.name {
+  border: 0px;
+  border-bottom: 2px solid #710000;
+  background-color: transparent;
+  color: #710000;
+  padding: 10px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.name::placeholder {
+  color: #a84242;
+}
+
+.name:focus {
+  outline: none;
+}
+
+.btn-join {
+  margin-top: 20px;
+  background-color: black;
+  border: 0px;
+  padding: 8px 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-generate {
+  margin-top: 20px;
+  background-color: #710000;
+  border: 0px;
+  padding: 8px 10px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+ul.member-list {
+  padding: 0px;
+  flex: 1;
+  overflow-y: auto;
+  width: 100vw;
+  text-align: center;
+}
+
+.member-list li{
+  list-style: none;
+  font-size: 18px;
+  color: #710000;
+}
